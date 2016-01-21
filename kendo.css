@@ -13,14 +13,12 @@
 }
 body {
 	background-image: url(background1.jpg);
-	padding-top: 250px;
 	font-family: 'Nixie One Regular';
 	font-size: 1.2em;
 }
 
 header {
 	height:300px;
-	position:fixed;
 	top:0;
 	width: 100%;
 	overflow:hidden;
@@ -49,7 +47,7 @@ img.slide {
 
 #marginFix {
 	text-align: center;
-	margin-top: 25px;
+	/*margin-top: 25px;*/
 	margin-left: 2.5%;
 	margin-right: auto;
 	/*background-color: black;*/

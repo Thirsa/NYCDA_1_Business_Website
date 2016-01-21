@@ -29,17 +29,7 @@ $(document).ready(function() {
     };
   });
 
- // This function (below) makes the header slide up and down when scrolling //
 
-  $(window).scroll(function () {
-      console.log($(window).scrollTop())
-    if ($(window).scrollTop() > 250) {
-      $('header').slideUp(50);
-    }
-    if ($(window).scrollTop()<150){
-      $('header').slideDown(50);
-    }
-  });
 
 // This function (below) adds the 'active1' class to the navigationbar-link //
 // Make sure you also copy in the css for 'active1' //
