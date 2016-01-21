@@ -5,8 +5,8 @@
 	<script type="text/javascript" src='http://code.jquery.com/jquery-2.2.0.js'></script>
 	<script type="text/javascript" src='kendo.js'></script>
 	<script type="text/javascript" src="http://malsup.github.com/jquery.cycle.all.js"></script>
+	<title>B. FIERCE! Martial Arts School</title>
 
-	<title></title>
 </head>
 <body>
 	<header>
@@ -18,10 +18,32 @@
 		</div>
 	</header>
 <!-- NAV HERE -->
+	<div id="marginFix">
+		<nav class="main-nav">
+			<ul id="navMenu">
+				<li><a href="Home.html">Home</a>
+					<ul class="subMenu">
+						<li><a href="#about">About</a></li>
+						<li><a href="#contacts">contacts</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Jiu Jitsu</a></li>
+				<li><a href="#">Taekwondo</a></li>
+				<li><a href="#">Kendo</a></li>
+				<li><a href="#">Classes</a>
+					<ul class="subMenu">
+						<li><a name="schedule" href="classes.html#schedule">Schedule</a></li>
+						<li><a name="prices" href="classes.html#prices">Prices</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</div>
 
 	<div class='wrapper'>
 
 	<section class="col1">
+	<br><br><br><br><br><br><br>
 		<h2>Kendo</h2>
 			<p>this is a welcome message for a kendo page. something inspirational
 			</p>
@@ -30,6 +52,7 @@
 	</section>	
 
 	<section class="col2">
+		<br><br><br><br><br><br><br>
 <!--This box doesn't work properly YET  -->
 		<div class ='box' float='right'>
 				<a target="_blank" href="Schedule.html">
@@ -44,26 +67,29 @@
 					<img class='thumb'
 					id='swapImage'
 
-					width= '290px' 
-					height= '435px' 
 					src="teacher1Norm.jpg" 
 					alt="Your teacher">
 				<div class="desc">Your teacher is 
-					<a name='about' target="_blank" href="home.html#about">teacher1</a>
+					<a name='about' target="_blank" href="Home.html#about">teacher1</a>
 				</div>
 			</div>
 
 	</section>
 
 </div>
-	<footer>
-		<a href="">Home</a>
-		<a href="">Jiu Jitsu</a>
-		<a href="">Taekwondo</a>
-		<a href="">Kendo</a>
-		<a href="">Classes</a>
-		<a href="">Careers</a>
-		<span>Copyright stuffs</span>
+	<footer> 
+		<div id="footerMenu">
+			<ul>
+				<li><a href="Home.html">Home</a></li>
+				<li><a href="#">Brazilian Jiu Jitsu</a></li>
+				<li><a href="#">Taekwondo</a></li>
+				<li><a href="#">Kendo</a></li>
+				<li><a href="#">Classes</a></li>
+			</ul>
+		</div>
+		<div id="copyright">
+			<p>copy Bestuur Martial Art</p>
+		</div>
 	</footer>
 
 </body>

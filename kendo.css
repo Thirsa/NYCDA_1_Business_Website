@@ -1,37 +1,154 @@
-html, body {
-	margin: 0;
-	padding: 0;
+* {
+	margin:0;
+	padding:0;
 }
-html {
-	background-image: url("background.jpg");
-}
-	header {
-		height: 500px;
-		margin: 0;
-		padding: 0;
-		padding-bottom: 5px;
-		border: 2px;
-	}
-		img.slide {
-			object-fit: cover;
-		}
 
-	div.wrapper {
-		height: 1200px;
-		width: 1100px;
-		margin: 0 auto;
-		padding: 15px;
-		background-color: white;
-	}
+@font-face { 
+    font-family: 'Capture It'; 
+    src: url('Capture it.ttf'); 
+}
+@font-face{
+	font-family: 'Nixie One Regular';
+	src: url('NixieOne.ttf');
+}
+body {
+	background-image: url(background1.jpg);
+	padding-top: 250px;
+	font-family: 'Nixie One Regular';
+	font-size: 1.2em;
+}
+
+header {
+	height:300px;
+	position:fixed;
+	top:0;
+	width: 100%;
+	overflow:hidden;
+	padding:0;
+}
+
+img.slide {
+	object-fit: cover;
+}
+/*Nav*/
+.main-nav {	
+	/*background-color: black;*/
+	/*height: 3em;*/
+	/*height: 50px;*/
+	/*width:100%;*/
+	/*top:5px;*/
+	/*text-align: center;*/
+	/*vertical-align: center;*/
+	/*position: relative;*/
+	z-index: 150;
+	/*box-shadow: 0 2px 3px rgba(0,0,0,.4);*/
+	/*border:0;*/
+	/*border-radius: 0px;*/
+    font-family: 'Capture It'; 
+}
+
+#marginFix {
+	text-align: center;
+	margin-top: 25px;
+	margin-left: 2.5%;
+	margin-right: auto;
+	/*background-color: black;*/
+	width: 100%;
+	/*line-height: 40px;*/
+	/*border: 5px solid green;*/
+	/*margin-left: 30px;*/
+	/*height: 20px;*/
+}
+
+#navMenu {
+	/*display: inline;*/
+	/*margin-left: auto;*/
+	/*margin-right: auto;*/
+	/*height: 50px;*/
+	/*text-align: center;*/
+	/*width: 100%;*/
+	/*margin-left: 10%;*/
+	/*margin-right:10%;*/
+}
+
+#navMenu ul {
+	/*height: 100px;*/
+	/*width: auto;*/
+}
+#navMenu li {
+	display: block;
+	width: 240px;
+	/*height: 40px;*/
+	/*background-color: black;*/
+	/*line-height: 0px;*/
+	float:left;
+	/*margin-left: auto ;*/
+	/*margin-right: auto;*/
+	position: relative;
+	/*margin: 0;*/
+}
+
+#navMenu li:hover > a{
+	background-color: green;
+	/*line-height: 10px;*/
+}
+
+#navMenu li a:hover {
+	/*display: block;*/
+	background-color: yellow;
+	/*float: left;*/
+
+}
+#navMenu li a{ 
+	text-decoration: none;
+	display: block;
+	line-height: 25px;
+	/*height: 0;*/
+	/*width: 250px;*/
+	/*border: 1px solid white;*/
+	background-color: black;
+
+
+}
+.subMenu {
+	display:none;
+	position: absolute;
+}
+
+#navMenu li:hover .subMenu{
+	display: block;
+
+}
+.subMenu li a{
+	text-decoration: none
+}
+
+.active1 {
+	font-size:40px;
+	/*border:1px solid white;*/
+	/*color: purple;*/
+}
+
+.navbar-fixed {
+	top:0;
+    z-index: 100;
+  	position: fixed;
+    width: 100%;
+    /*font-family: 'Capture It'; */
+}
+
+/*Nav related code ends here*/
+
+
+div.wrapper {
+	height: 1200px;
+	width: 1100px;
+	margin: 0 auto;
+	padding: 15px;
+
+}
 	/*NAV bar CSS here*/
-/*	nav ul>li {
-		list-style-type: none;
-	    display:inline;
-	}
-	nav {
-		padding-top: 30px;
-		padding-left: 40px;
-	}
+/*
 		a:link{
 		  color: #20232a;
 		  text-decoration: none;
@@ -45,41 +162,41 @@ html {
 		text-decoration: underline;
 		}
 */
-	section {
-		padding: 7px;
+section {
+	padding: 7px;
+}
+	.col1 {
+		float: left;
+		width: 750px;
 	}
-		.col1 {
-			float: left;
-			width: 750px;
-		}
-		.col2 {
-			float: right;
-			width: 300px;
-			border-left: 1px solid#2B2D3C;
-		} 
+	.col2 {
+		float: right;
+		width: 300px;
+		border-left: 1px solid#2B2D3C;
+	} 
+	.right {
+		float: right;
+		margin: 5px;
+	}
+	.left {
+		float: left;
+		margin: 5px;
+	}
 
-		.right {
-			float: right;
-			margin: 5px;
-		}
-		.left {
-			float: left;
-			margin: 5px;
-		}
 /*This is for 'teacher bio containers'*/
 		div.box {
 		    margin-right: 5px;
 		    margin-top: 5px;
 		    border: 1px solid gray;
-		    width: 290px;
+		    width: 200px;
 		}	
 		div.box:hover {
 		    border: 1px solid #2B2D3C;
 		}
 		div.box img {
 			position: relative;
-		    width: 290px;
-		    height: 435px;
+		    width: 200px;
+		    height: 300px;
 		}
 		div.desc {
 		    padding: 15px;
@@ -87,8 +204,8 @@ html {
 		}
 		.thumb {
 		    float: left;
-		    width: 290px;
-		    height: 435px;
+		    width: 200px;
+		    height: 300px;
     		background-position: center center;
     		background-size: cover;
     	}
@@ -104,13 +221,40 @@ html {
 	    transform: scale(1.5);
 		}
 
-		
-	footer {
+#contacts {
+	clear: both;
+}
+
+#footerMenu {
+	float: left;
+	/*width: 40px;*/
+	padding-left: none;
+	}
+
+#footerMenu a {
+	text-decoration: none;
+	}
+
+#footerMenu li {
+	float: left;
+	list-style-type: none;
+	}
+
+#copyright {
+	float: right;
+	}
+
+ul, li {
+	display: inline;
+	/*list-style-type: none;*/
+	}
+
+/*My stuff commented out*/
+/*	footer {
 		height: 100px;
 		border-top: 1px solid#2B2D3C;
 		padding: 0 2em;
 		clear: both;
 		font-size: .8em;
-		
-		color: white;
-	}
+	
+	}*/
