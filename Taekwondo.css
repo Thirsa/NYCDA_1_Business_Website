@@ -14,7 +14,6 @@
 
 body {
 	background-image: url(background1.jpg);
-	/*padding-top: 250px;*/
 	font-family: 'Nixie One Regular';
 	font-size: 1.2em;
 }
@@ -27,9 +26,9 @@ header {
 	padding:0;
 }
 
-p {
+/*p {
 	font-family:Times;
-}
+}*/
 
 
 
