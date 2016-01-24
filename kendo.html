@@ -1,6 +1,7 @@
 <doctype! html>
 <html>
 <head>
+	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="kendo.css">
 	<script type="text/javascript" src='http://code.jquery.com/jquery-2.2.0.js'></script>
 	<script type="text/javascript" src='kendo.js'></script>
@@ -21,19 +22,19 @@
 	<div id="marginFix">
 		<nav class="main-nav">
 			<ul id="navMenu">
-				<li><a href="Home.html">Home</a>
+				<li class="floatleftlinks"><a href="Home.html">Home</a>
 					<ul class="subMenu">
-						<li><a href="#about">About</a></li>
-						<li><a href="#contacts">contacts</a></li>
+						<li class="subMenuLinks"><a href="#about">About</a></li>
+						<li class="subMenuLinks"><a href="#contacts">Contacts</a></li>
 					</ul>
 				</li>
-				<li><a href="#">Jiu Jitsu</a></li>
-				<li><a href="#">Taekwondo</a></li>
-				<li><a href="kendo.html">Kendo</a></li>
-				<li><a href="classes.html">Classes</a>
+				<li class="floatleftlinks"><a href="#">Jiu Jitsu</a></li>
+				<li class="floatleftlinks"><a href="#">Taekwondo</a></li>
+				<li class="floatleftlinks"><a href="kendo.html">Kendo</a></li>
+				<li class="floatleftlinks"><a href="classes.html">Classes</a>
 					<ul class="subMenu">
-						<li><a name="schedule" href="classes.html#schedule">Schedule</a></li>
-						<li><a name="prices" href="classes.html#prices">Prices</a></li>
+						<li class="subMenuLinks"><a name="schedule" href="classes.html#schedule">Schedule</a></li>
+						<li class="subMenuLinks"><a name="prices" href="classes.html#prices">Prices</a></li>
 					</ul>
 				</li>
 			</ul>
@@ -43,20 +44,37 @@
 	<div class='wrapper'>
 
 	<section class="col1">
-	<br><br><br><br><br><br><br>
+	<br><br>
 		<h2>Kendo</h2>
-			<p>this is a welcome message for a kendo page. something inspirational
+			<p>Kendo (剣道 kendō, lit. "sword way") is a modern Japanese martial art, which descended from swordsmanship (kenjutsu) and uses bamboo swords (shinai) and protective armour (bōgu). Today, it is widely practiced within Japan and many other nations across the world. Kendo is an activity that combines martial arts practices and values with strenuous physical activity.
 			</p>
-			<p>kendo is awesome.</p>
-			<p>our teacher has so much exp</p>
+			<p>In 1975, the All Japan Kendo Federation (AJKF) developed then published "The Concept and Purpose of Kendo" which is reproduced below.
+
+<br>Purpose
+<br>To mold the mind and body.
+<br>To cultivate a vigorous spirit,
+<br>And through correct and rigid training,
+<br>To strive for improvement in the art of Kendo.
+<br>To hold in esteem human courtesy and honor.
+<br>To associate with others with sincerity.
+<br>And to forever pursue the cultivation of oneself.
+<br>Thus will one be able:
+<br>To love one's country and society;
+<br>To contribute to the development of culture;
+<br>And to promote peace and prosperity among all peoples.
+</p>
+<p>
+Kendo training is quite noisy in comparison to some other martial arts or sports. This is because kendōka use a shout, or kiai (気合い), to express their fighting spirit when striking. Additionally, kendōka execute fumikomi-ashi (踏み込み足), an action similar to a stamp of the front foot, when making a strike.
+Kendo techniques comprise both strikes and thrusts. Strikes are only made towards specified target areas (打突-部位 datotsu-bui) on the wrists, head, or body, all of which are protected by armour. The targets are men, sayu-men or yoko-men (upper left or right side of the men), the right kote at any time, the left kote when it is in a raised position, and the left or right side of the dō. Thrusts (突き tsuki) are only allowed to the throat. However, since an incorrectly performed thrust could cause serious injury to the opponent's neck, thrusting techniques in free practice and competition are often restricted to senior dan graded kendōka.</p>
+</p>
 	</section>	
 
 	<section class="col2">
-		<br><br><br><br><br><br><br>
+		<br><br>
 <!--This box doesn't work properly YET  -->
 		<div class ='box' float='right'>
 				<a target="_blank" href="Schedule.html">
-					<img src=".jpg" alt="Schedule">
+					<img src="schedule.jpg" alt="Schedule">
 				</a>
 				<div class="desc">Check out the next class time</div>
 		</div>
@@ -81,7 +99,7 @@
 		<div id="footerMenu">
 			<ul>
 				<li><a href="Home.html">Home</a></li>
-				<li><a href="#">Brazilian Jiu Jitsu</a></li>
+				<li><a href="#">Jiu Jitsu</a></li>
 				<li><a href="#">Taekwondo</a></li>
 				<li><a href="#">Kendo</a></li>
 				<li><a href="#">Classes</a></li>

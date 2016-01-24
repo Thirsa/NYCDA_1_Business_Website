@@ -5,6 +5,35 @@
 	<script src="kendo.js"></script>
 	<script type="text/javascript" src="http://malsup.github.com/jquery.cycle.all.js"></script>
 	<link rel="stylesheet" type="text/css" href="kendo.css">
+<!-- This script better stay on the page -->
+	<script>
+	function myFunction() {
+    var person = prompt("Please enter your name to book a class", "Enter your name here");
+    	if (person.length===0) {
+    		var nope = alert("Enter your name again");
+		}
+		else {
+		    var success = alert("You have successfully booked a class!");
+		}    	
+	}
+	</script>
+<!-- css can be added to general -->
+	<style type="text/css">
+		.buttonSch {
+			border: none;
+  			color: black;
+    		padding: 20px 35px;
+    		text-align: center;
+    		text-decoration: none;
+    		display: inline-block;
+    		font-size: 16px;
+			background-color: transparent;
+		}
+
+
+	</style>
+
+
 	<title>B. FIERCE! Martial Arts School</title>
 </head>
 <body>
@@ -18,74 +47,118 @@
 	<div id="marginFix">
 		<nav class="main-nav">
 			<ul id="navMenu">
-				<li><a href="Home.html">Home</a>
+				<li class="floatleftlinks"><a href="Home.html">Home</a>
 					<ul class="subMenu">
-						<li><a href="Home.html#about">About</a></li>
-						<li><a href="Home.html#contacts">contacts</a></li>
+						<li class="subMenuLinks"><a href="#about">About</a></li>
+						<li class="subMenuLinks"><a href="#contacts">Contacts</a></li>
 					</ul>
 				</li>
-				<li><a href="#">Jiu Jitsu</a></li>
-				<li><a href="#">Taekwondo</a></li>
-				<li><a href="kendo.html">Kendo</a></li>
-				<li><a href="classes.html">Classes</a>
+				<li class="floatleftlinks"><a href="#">Jiu Jitsu</a></li>
+				<li class="floatleftlinks"><a href="#">Taekwondo</a></li>
+				<li class="floatleftlinks"><a href="#">Kendo</a></li>
+				<li class="floatleftlinks"><a href="#">Classes</a>
 					<ul class="subMenu">
-						<li><a name="schedule" href="classes.html#schedule">Schedule</a></li>
-						<li><a name="prices" href="classes.html#prices">Prices</a></li>
+						<li class="subMenuLinks"><a name="schedule" href="classes.html#schedule">Schedule</a></li>
+						<li class="subMenuLinks"><a name="prices" href="classes.html#prices">Prices</a></li>
 					</ul>
 				</li>
 			</ul>
 		</nav>
-	</div>
+	</div>		
 	
 	<div class='wrapper'>
 		<section>
 		<br><br><br><br><br><br><br>
 		
 		<h2 name='schedule' id='schedule'>Schedule</h2>
-		<table style="width:90%">
-	  	<tr>
-	    	<td>Mon</td>
-	    	<td>Tue</td>		
-	    	<td>Wed</td>
-	    	<td>Thu</td>
-	    	<td>Fri</td>
-	    	<td>Sat</td>
-	    	<td>Sun</td>
-
- 	 	</tr>
+		<br>
+		<table style="width:100%">
+		<tr>
+    		<th>Time</th>
+	    	<th>Mon</th>
+	    	<th>Tue</th>		
+	    	<th>Wed</th>
+	    	<th>Thu</th>
+	    	<th>Fri</th>
+	    	<th>Sat</th>
+  		</tr>
   		<tr>
-    		<td>Mon</td>
-	    	<td>Tue</td>		
-	    	<td>Wed</td>
-	    	<td>Thu</td>
-	    	<td>Fri</td>
-	    	<td>Sat</td>
-	    	<td>Sun</td>
+  			<td>9:00-10:30</td>
+    		<td><button class="buttonSch" onclick="myFunction()">  Kendo  </button></td>
+    		<td><button class="buttonSch" onclick="myFunction()">Taekwondo</button></td>
+    		<td><button class="buttonSch" onclick="myFunction()">Jiu Jitsu</button></td>		
+    		<td><button class="buttonSch" onclick="myFunction()">  Kendo  </button></td>
+    		<td><button class="buttonSch" onclick="myFunction()">Taekwondo</button></td>
+    		<td><button class="buttonSch" onclick="myFunction()">Jiu Jitsu I</button></td>
 		</tr>
   		<tr>
-			<td>Mon</td>
-	    	<td>Tue</td>		
-	    	<td>Wed</td>
-	    	<td>Thu</td>
-	    	<td>Fri</td>
-	    	<td>Sat</td>
-	    	<td>Sun</td>
+  			<td>11:00-12:30</td>
+			<td> - </td>
+	    	<td> - </td>		
+	    	<td> - </td>
+    		<td><button class="buttonSch" onclick="myFunction()">Taekwondo</button></td>
+    		<td><button class="buttonSch" onclick="myFunction()">Jiu Jitsu</button></td>		
+    		<td><button class="buttonSch" onclick="myFunction()">Kendo I</button></td>
+  		</tr>
+  		<tr>
+  			<td>19:00-20:30</td>
+    		<td><button class="buttonSch" onclick="myFunction()">Kendo</button></td>
+    		<td><button class="buttonSch" onclick="myFunction()">Taekwondo</button></td>
+    		<td><button class="buttonSch" onclick="myFunction()">Jiu Jitsu</button></td>		
+    		<td><button class="buttonSch" onclick="myFunction()">Kendo</button></td>
+    		<td><button class="buttonSch" onclick="myFunction()">Taekwondo</button></td>
+    		<td><button class="buttonSch" onclick="myFunction()">Jiu Jitsu I</button></td>		
+  		</tr>
+  		 <tr>
+  			<td>19:00-20:30</td>
+    		<td><button class="buttonSch" onclick="myFunction()">Jiu Jitsu</button></td>		
+    		<td><button class="buttonSch" onclick="myFunction()">Kendo</button></td>
+    		<td><button class="buttonSch" onclick="myFunction()">Taekwondo</button></td>
+    		<td><button class="buttonSch" onclick="myFunction()">Jiu Jitsu</button></td>		
+    		<td><button class="buttonSch" onclick="myFunction()">Kendo</button></td>
+    		<td><button class="buttonSch" onclick="myFunction()">Taekwondo I</button></td>
+  		</tr>
+  		 <tr>
+  			<td>21:00-22:30</td>
+    		<td><button class="buttonSch" onclick="myFunction()">Kendo</button></td>
+    		<td><button class="buttonSch" onclick="myFunction()">Taekwondo I</button></td>
+    		<td><button class="buttonSch" onclick="myFunction()">Jiu Jitsu</button></td>		
+    		<td><button class="buttonSch" onclick="myFunction()">Jiu Jitsu</button></td>		
+    		<td><button class="buttonSch" onclick="myFunction()">Taekwondo</button></td>
+    		<td><button class="buttonSch" onclick="myFunction()">Kendo I</button></td>
   		</tr>
 		</table>
-
+		<br>
 	<div> 
 		<h2 name='prices' id='prices'>Prices</h2>
+		<br>
 		<table>
 		<tr>
 			<td>Trial class</td>
-	    	<td>15$</td>		
+	    	<td>15</td>		
 	    </tr>
 	    <tr>
-	    	<td>10 classes</td>
-	    	<td>80</td>
+	    	<td>4 classes</td>
+	    	<td>50</td>
+	    </tr>
+	    <tr>
+	    	<td>8 classes</td>
+	    	<td>85</td>
+	    </tr>
+	    <tr>
+	    	<td>12 classes</td>
+	    	<td>100</td>
 	    </tr>	
 	    <tr>
-	    	<td>1 month unlim taekwondo</td>
+	    	<td>1 month unlim Jiu Jitsu</td>
+	    	<td>120</td>
+	    </tr>
+	    <tr>
+	    	<td>1 month unlim Taekwondo</td>
+	    	<td>120</td>
+	    </tr>
+	    <tr>
+	    	<td>1 month unlim Kendo</td>
 	    	<td>120</td>
 	    </tr>
 		</table>
@@ -98,7 +171,7 @@
 		<div id="footerMenu">
 			<ul>
 				<li><a href="#">Home</a></li>
-				<li><a href="#">Brazilian Jiu Jitsu</a></li>
+				<li><a href="#">Jiu Jitsu</a></li>
 				<li><a href="#">Taekwondo</a></li>
 				<li><a href="#">Kendo</a></li>
 				<li><a href="#">Classes</a></li>

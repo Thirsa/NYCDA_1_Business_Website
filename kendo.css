@@ -18,7 +18,7 @@ body {
 }
 
 header {
-	height:300px;
+	height:370px;
 	top:0;
 	width: 100%;
 	overflow:hidden;
@@ -30,73 +30,60 @@ img.slide {
 }
 /*Nav*/
 .main-nav {	
-	/*background-color: black;*/
-	/*height: 3em;*/
-	/*height: 50px;*/
-	/*width:100%;*/
-	/*top:5px;*/
-	/*text-align: center;*/
-	/*vertical-align: center;*/
-	/*position: relative;*/
 	z-index: 150;
-	/*box-shadow: 0 2px 3px rgba(0,0,0,.4);*/
-	/*border:0;*/
-	/*border-radius: 0px;*/
     font-family: 'Capture It'; 
 }
 
 #marginFix {
 	text-align: center;
-	/*margin-top: 25px;*/
-	margin-left: 2.5%;
-	margin-right: auto;
-	/*background-color: black;*/
+	background-color: black;
 	width: 100%;
-	/*line-height: 40px;*/
-	/*border: 5px solid green;*/
-	/*margin-left: 30px;*/
-	/*height: 20px;*/
-}
-
-#navMenu {
-	/*display: inline;*/
-	/*margin-left: auto;*/
-	/*margin-right: auto;*/
-	/*height: 50px;*/
-	/*text-align: center;*/
-	/*width: 100%;*/
-	/*margin-left: 10%;*/
-	/*margin-right:10%;*/
 }
 
 #navMenu ul {
-	/*height: 100px;*/
-	/*width: auto;*/
+	width: 100%;
 }
 #navMenu li {
 	display: block;
-	width: 240px;
-	/*height: 40px;*/
-	/*background-color: black;*/
-	/*line-height: 0px;*/
-	float:left;
-	/*margin-left: auto ;*/
-	/*margin-right: auto;*/
+	width: 20%;
 	position: relative;
-	/*margin: 0;*/
+}
+.floatleftlinks{
+	float:left;
+	width: 100%;
+}
+
+#navMenu ul {
+	width: 100%;
+}
+
+#navMenu ul li {
+	width: 100%;
+}
+
+.subMenuLinks {
+	/*text-align: left;*/
+	display: block;
+	width: 100%;
+	/*background-color: black;	*/
+}
+
+.subMenu li {
+	width: 100%;
 }
 
 #navMenu li:hover > a{
-	background-color: green;
+	background-color: brown;
 	/*line-height: 10px;*/
 }
 
 #navMenu li a:hover {
 	/*display: block;*/
-	background-color: yellow;
+	background-color: brown;
 	/*float: left;*/
 
 }
+
 #navMenu li a{ 
 	text-decoration: none;
 	display: block;
@@ -105,12 +92,14 @@ img.slide {
 	/*width: 250px;*/
 	/*border: 1px solid white;*/
 	background-color: black;
+	padding:15px;
 
 
 }
 .subMenu {
 	display:none;
 	position: absolute;
+	width: 100%;
 }
 
 #navMenu li:hover .subMenu{
@@ -139,27 +128,12 @@ img.slide {
 
 
 div.wrapper {
-	height: 1200px;
+	height: 1050px;
 	width: 1100px;
 	margin: 0 auto;
 	padding: 15px;
 
 }
-	/*NAV bar CSS here*/
-/*
-		a:link{
-		  color: #20232a;
-		  text-decoration: none;
-		}
-		a:visited{
-		  color: #20232a;
-		  text-decoration: none;
-		}
-		a:hover {
-		color: #FAEBD7;
-		text-decoration: underline;
-		}
-*/
 section {
 	padding: 7px;
 }
@@ -223,36 +197,63 @@ section {
 	clear: both;
 }
 
+
+footer {
+	border: 1px solid black;
+	background-color: black;
+	height: 50px;
+	display: block;
+}
+
 #footerMenu {
 	float: left;
-	/*width: 40px;*/
-	padding-left: none;
 	}
 
 #footerMenu a {
 	text-decoration: none;
+	color: white;
+	display: block;
+	height: 100%;
+	width: 100%;
+	line-height: 50px;
 	}
 
-#footerMenu li {
+#footerMenu a:hover {
+	background-color: brown;	
+}
+
+#footerMenu ul li {
 	float: left;
 	list-style-type: none;
+	display: block;
+	width: 100px;
+	text-align: center;
 	}
+
+#footerMenu ul {
+	display: block; 	
+}
 
 #copyright {
 	float: right;
+	padding-right: 20px;
 	}
+#copyright p {
+	color: white;
+	line-height: 50px;
+}
 
-ul, li {
-	display: inline;
-	/*list-style-type: none;*/
-	}
 
-/*My stuff commented out*/
-/*	footer {
-		height: 100px;
-		border-top: 1px solid#2B2D3C;
-		padding: 0 2em;
-		clear: both;
-		font-size: .8em;
-	
-	}*/
+/*the table is only needed on classes page.*/
+table, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+td {
+    text-align: center;
+    background-color: #F2EDD8;
+    opacity: 0.6;
+}
+td:hover{
+	background-color: #7B8D8E;
+}
