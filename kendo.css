@@ -36,7 +36,6 @@ img.slide {
 
 #marginFix {
 	text-align: center;
-	background-color: black;
 	width: 100%;
 }
 
@@ -59,13 +58,7 @@ img.slide {
 
 #navMenu ul li {
 	width: 100%;
-}
-
-.subMenuLinks {
-	/*text-align: left;*/
 	display: block;
-	width: 100%;
-	/*background-color: black;	*/
 }
 
 .subMenu li {

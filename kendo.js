@@ -23,11 +23,11 @@ $(document).ready(function() {
 
    
     $('#swapImage').click(function () {
-      if ($('#swapImage').attr('src')=='teacher1Norm.jpg'){
-        $('#swapImage').attr('src','teacher1.jpg');
+      if ($('#swapImage').attr('src')=='img/teacher1Norm.jpg'){
+        $('#swapImage').attr('src','img/teacher1.jpg');
       }
       else {
-        $('#swapImage').attr('src','teacher1Norm.jpg');
+        $('#swapImage').attr('src','img/teacher1Norm.jpg');
       }
     }); 
 });
