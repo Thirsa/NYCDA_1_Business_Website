@@ -32,29 +32,29 @@ $('.main-nav a').each(function() {
     });
 
 $('#swapImage1').click(function () {
-     if ($('#swapImage1').attr('src')=='teacher1Norm.jpg'){
-       $('#swapImage1').attr('src','teacher1.jpg');
+     if ($('#swapImage1').attr('src')=='img/teacher1Norm.jpg'){
+       $('#swapImage1').attr('src','img/teacher1.jpg');
      }
      else {
-       $('#swapImage1').attr('src','teacher1Norm.jpg');
+       $('#swapImage1').attr('src','img/teacher1Norm.jpg');
      }
    });
 
    $('#swapImage2').click(function () {
-     if ($('#swapImage2').attr('src')=='teacher2Norm.jpg'){
-       $('#swapImage2').attr('src','teacher2.jpg');
+     if ($('#swapImage2').attr('src')=='img/teacher2Norm.jpg'){
+       $('#swapImage2').attr('src','img/teacher2.jpg');
      }
      else {
-       $('#swapImage2').attr('src','teacher2Norm.jpg');
+       $('#swapImage2').attr('src','img/teacher2Norm.jpg');
      }
    });
 
    $('#swapImage3').click(function () {
-     if ($('#swapImage3').attr('src')=='teacher3Norm.jpg'){
-       $('#swapImage3').attr('src','teacher3.jpg');
+     if ($('#swapImage3').attr('src')=='img/teacher3Norm.jpg'){
+       $('#swapImage3').attr('src','img/teacher3.jpg');
      }
      else {
-       $('#swapImage3').attr('src','teacher3Norm.jpg');
+       $('#swapImage3').attr('src','img/teacher3Norm.jpg');
      }
    });
 });
