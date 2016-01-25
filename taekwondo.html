@@ -1,19 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<script src="https://code.jquery.com/jquery-2.2.0.js"></script>
-	<script src="Taekwondo.js"></script>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="home.css">
+	<style type="text/css">
+	section {
+	padding: 7px;
+}
+	.col1 {
+		float: left;
+		width: 750px;
+	}
+	.col2 {
+		float: right;
+		width: 300px;
+		border-left: 1px solid#2B2D3C;
+	} 
+	.right {
+		float: right;
+		margin: 5px;
+	}
+	.left {
+		float: left;
+		margin: 5px;
+	}
+
+	</style>
+
+	<script type="text/javascript" src='http://code.jquery.com/jquery-2.2.0.js'></script>
 	<script type="text/javascript" src="http://malsup.github.com/jquery.cycle.all.js"></script>
-	<link rel="stylesheet" type="text/css" href="Taekwondo.css">
+	<script type="text/javascript" src='home.js'></script>
+	
 	<title>B. FIERCE! Martial Arts School: Taekwondo</title>
+
 </head>
 <body>
 	<header>
 		<div class='slideshow'>
-			<img class='slide' src="taekwondo1.jpg" width='100%' >
-			<img class='slide' src="taekwondo2.jpg" width='100%' >
-			<img class='slide' src="taekwondo3.jpg" width='100%' >
-			<img class='slide' src="taekwondo4.jpg" width='100%' >
+			<img class='slide' src="img/taekwondo1.jpg" width='100%' >
+			<img class='slide' src="img/taekwondo2.jpg" width='100%' >
+			<img class='slide' src="img/taekwondo3.jpg" width='100%' >
+			<img class='slide' src="img/taekwondo4.jpg" width='100%' >
 		</div>
 	</header>
 	<div id="marginFix">
@@ -64,8 +91,8 @@
 		<br>
 		<br>
 		<div class ='box' float='right'>
-				<a target="_blank" href="Schedule.html">
-					<img src="schedule.jpg" alt="Schedule">
+				<a target="_blank" href="classes.html">
+					<img src="img/schedule.jpg" alt="Schedule">
 				</a>
 				<div class="desc">Check out the next class time</div>
 		</div>
@@ -74,9 +101,9 @@
 
 		<div class ='box' float='right'>
 					<img class='thumb'
-					id='swapImage'
+					id='swapImage2'
  
-					src="teacher2Norm.jpg" 
+					src="img/teacher2Norm.jpg" 
 					alt="Your teacher">
 				<div class="desc">Your teacher for this class is <a name='about' target="_blank" href="home.html#about">Mr Bob</a>
 				
