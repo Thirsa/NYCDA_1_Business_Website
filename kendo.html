@@ -1,0 +1,142 @@
+<doctype! html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="home.css">
+	<style type="text/css">
+	section {
+	padding: 7px;
+}
+	.col1 {
+		float: left;
+		width: 750px;
+	}
+	.col2 {
+		float: right;
+		width: 300px;
+		border-left: 1px solid#2B2D3C;
+	} 
+	.right {
+		float: right;
+		margin: 5px;
+	}
+	.left {
+		float: left;
+		margin: 5px;
+	}
+
+	</style>
+
+	<script type="text/javascript" src='http://code.jquery.com/jquery-2.2.0.js'></script>
+	<script type="text/javascript" src="http://malsup.github.com/jquery.cycle.all.js"></script>
+	<script type="text/javascript" src='home.js'></script>
+
+	<title>B. FIERCE! Martial Arts School</title>
+
+</head>
+<body>
+	<header>
+		<div class='slideshow'>
+			<img class='slide' src="img/kendo1.jpg" width='100%' height='500px'>
+			<img class='slide' src="img/kendo2.jpg" width='100%' height='500px'>
+			<img class='slide' src="img/kendo3.jpg"width='100%' height='500px'>
+			<img class='slide' src="img/kendo4.jpg"width='100%' height='500px'>
+		</div>
+	</header>
+<!-- NAV HERE -->
+	<div id="marginFix">
+		<nav class="main-nav">
+			<ul id="navMenu">
+				<li class="floatleftlinks"><a href="home.html">Home</a>
+					<ul class="subMenu">
+						<li class="subMenuLinks"><a href="#about">About</a></li>
+						<li class="subMenuLinks"><a href="#contacts">Contacts</a></li>
+					</ul>
+				</li>
+				<li class="floatleftlinks"><a href="bjj.html">Jiu Jitsu</a></li>
+				<li class="floatleftlinks"><a href="taekwondo.html">Taekwondo</a></li>
+				<li class="floatleftlinks"><a href="kendo.html">Kendo</a></li>
+				<li class="floatleftlinks"><a href="classes.html">Classes</a>
+					<ul class="subMenu">
+						<li class="subMenuLinks"><a name="schedule" href="classes.html#schedule">Schedule</a></li>
+						<li class="subMenuLinks"><a name="prices" href="classes.html#prices">Prices</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</div>
+
+	<div class='wrapper'>
+
+	<section class="col1">
+	<br><br>
+		<h2>Kendo</h2>
+			<p>Kendo (剣道 kendō, lit. "sword way") is a modern Japanese martial art, which descended from swordsmanship (kenjutsu) and uses bamboo swords (shinai) and protective armour (bōgu). Today, it is widely practiced within Japan and many other nations across the world. Kendo is an activity that combines martial arts practices and values with strenuous physical activity.
+			</p>
+			<br>
+			<p>In 1975, the All Japan Kendo Federation (AJKF) developed then published "The Concept and Purpose of Kendo" which is reproduced below.
+<br>
+<h5>Purpose</h5>
+<br>To mold the mind and body.
+<br>To cultivate a vigorous spirit,
+<br>And through correct and rigid training,
+<br>To strive for improvement in the art of Kendo.
+<br>To hold in esteem human courtesy and honor.
+<br>To associate with others with sincerity.
+<br>And to forever pursue the cultivation of oneself.
+<br>Thus will one be able:
+<br>To love one's country and society;
+<br>To contribute to the development of culture;
+<br>And to promote peace and prosperity among all peoples.
+</p>
+<br>
+<p>
+Kendo training is quite noisy in comparison to some other martial arts or sports. This is because kendōka use a shout, or kiai (気合い), to express their fighting spirit when striking. Additionally, kendōka execute fumikomi-ashi (踏み込み足), an action similar to a stamp of the front foot, when making a strike.
+<br>
+Kendo techniques comprise both strikes and thrusts. Strikes are only made towards specified target areas (打突-部位 datotsu-bui) on the wrists, head, or body, all of which are protected by armour. The targets are men, sayu-men or yoko-men (upper left or right side of the men), the right kote at any time, the left kote when it is in a raised position, and the left or right side of the dō. Thrusts (突き tsuki) are only allowed to the throat. However, since an incorrectly performed thrust could cause serious injury to the opponent's neck, thrusting techniques in free practice and competition are often restricted to senior dan graded kendōka.</p>
+</p>
+	</section>	
+
+	<section class="col2">
+		<br><br>
+<!--This box doesn't work properly YET  -->
+		<div class ='box' float='right'>
+				<a target="_blank" href="classes.html#schedule">
+					<img src="img/schedule.jpg" alt="Schedule">
+				</a>
+				<div class="desc">Check out the next class time</div>
+		</div>
+
+
+
+		<div class ='box' float='right'>
+					<img class='thumb'
+					id='swapImage1'
+
+					src="img/teacher1Norm.jpg" 
+					alt="Your teacher">
+				<div class="desc">Your teacher for this class is 
+					<a name='about' target="_blank" href="home.html#about">Jouke</a>
+				</div>
+			</div>
+
+	</section>
+
+</div>
+	<footer> 
+		<div id="footerMenu">
+			<ul>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="bjj.html">Jiu Jitsu</a></li>
+				<li><a href="taekwondo.html">Taekwondo</a></li>
+				<li><a href="kendo.html">Kendo</a></li>
+				<li><a href="classes.html">Classes</a></li>
+			</ul>
+		</div>
+		<div id="copyright">
+			<p>copy Bestuur Martial Art</p>
+		</div>
+	</footer>
+
+</body>
+</html>

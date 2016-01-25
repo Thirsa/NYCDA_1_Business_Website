@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- css -->
+	<link rel="stylesheet" type="text/css" href="home.css">
+	<style type="text/css">
+		.buttonSch {
+			border: none;
+  			color: black;
+    		padding: 20px 35px;
+    		text-align: center;
+    		text-decoration: none;
+    		display: inline-block;
+    		font-size: 16px;
+			background-color: transparent;
+		}
+		table, td {
+    		border: 1px solid black;
+    		border-collapse: collapse;
+		}
+		td {
+    		text-align: center;
+    		background-color: #F2EDD8;
+    		opacity: 0.6;
+		}
+		td:hover{
+			background-color: #7B8D8E;
+		}
+		.prices td {
+			width: 100px;
+			height: 100px;
+			padding: 10px;
+
+		}
+	</style>
+<!-- JS -->
+	<script src="https://code.jquery.com/jquery-2.2.0.js"></script>
+	<script type="text/javascript" src="http://malsup.github.com/jquery.cycle.all.js"></script>
+	<script type="text/javascript" src='home.js'></script>
+
+<!-- script specific for this page -->
+	<script>
+	function myFunction() {
+    var person = prompt("Please enter your name to book a class", "Enter your name here");
+    	if (person.length===0) {
+    		var nope = alert("Error. Enter your name!");
+		}
+		else {
+		    var success = alert("You have successfully booked a class!");
+		}    	
+	}
+	</script>
+
+	<title>B. FIERCE! Martial Arts School</title>
+</head>
+<body>
+	<header>
+		<div class='slideshow'>
+			<img class='slide' src="img/kendo1.jpg" width='100%' height='500px'>
+			<img class='slide' src="img/bjj3.jpg" width='100%' height='500px'>
+			<img class='slide' src="img/taekwondo1.jpg" width='100%' height='500px'>
+		</div>
+	</header>
+	<div id="marginFix">
+		<nav class="main-nav">
+			<ul id="navMenu">
+				<li class="floatleftlinks"><a href="home.html">Home</a>
+					<ul class="subMenu">
+						<li class="subMenuLinks"><a href="#about">About</a></li>
+						<li class="subMenuLinks"><a href="#contacts">Contacts</a></li>
+					</ul>
+				</li>
+				<li class="floatleftlinks"><a href="bjj.html">Jiu Jitsu</a></li>
+				<li class="floatleftlinks"><a href="taekwondo.html">Taekwondo</a></li>
+				<li class="floatleftlinks"><a href="kendo.html">Kendo</a></li>
+				<li class="floatleftlinks"><a href="classes.html">Classes</a>
+					<ul class="subMenu">
+						<li class="subMenuLinks"><a name="schedule" href="classes.html#schedule">Schedule</a></li>
+						<li class="subMenuLinks"><a name="prices" href="classes.html#prices">Prices</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</div>		
+	
+	<div class='wrapper'>
+		<section>
+		<br><br><br><br><br><br><br>
+		
+		<h2 name='schedule' id='schedule'>Schedule</h2>
+		<br>
+		<table style="width:100%">
+		<tr>
+    		<th>Time</th>
+	    	<th>Mon</th>
+	    	<th>Tue</th>		
+	    	<th>Wed</th>
+	    	<th>Thu</th>
+	    	<th>Fri</th>
+	    	<th>Sat</th>
+  		</tr>
+  		<tr>
+  			<td>9:00-10:30</td>
+    		<td><button class="buttonSch" onclick="myFunction()">  Kendo  </button></td>
+    		<td><button class="buttonSch" onclick="myFunction()">Taekwondo</button></td>
+    		<td><button class="buttonSch" onclick="myFunction()">Jiu Jitsu</button></td>		
+    		<td><button class="buttonSch" onclick="myFunction()">  Kendo  </button></td>
+    		<td><button class="buttonSch" onclick="myFunction()">Taekwondo</button></td>
+    		<td><button class="buttonSch" onclick="myFunction()">Jiu Jitsu I</button></td>
+		</tr>
+  		<tr>
+  			<td>11:00-12:30</td>
+			<td> - </td>
+	    	<td> - </td>		
+	    	<td> - </td>
+    		<td><button class="buttonSch" onclick="myFunction()">Taekwondo</button></td>
+    		<td><button class="buttonSch" onclick="myFunction()">Jiu Jitsu</button></td>		
+    		<td><button class="buttonSch" onclick="myFunction()">Kendo I</button></td>
+  		</tr>
+  		<tr>
+  			<td>19:00-20:30</td>
+    		<td><button class="buttonSch" onclick="myFunction()">Kendo</button></td>
+    		<td><button class="buttonSch" onclick="myFunction()">Taekwondo</button></td>
+    		<td><button class="buttonSch" onclick="myFunction()">Jiu Jitsu</button></td>		
+    		<td><button class="buttonSch" onclick="myFunction()">Kendo</button></td>
+    		<td><button class="buttonSch" onclick="myFunction()">Taekwondo</button></td>
+    		<td><button class="buttonSch" onclick="myFunction()">Jiu Jitsu I</button></td>		
+  		</tr>
+  		 <tr>
+  			<td>19:00-20:30</td>
+    		<td><button class="buttonSch" onclick="myFunction()">Jiu Jitsu</button></td>		
+    		<td><button class="buttonSch" onclick="myFunction()">Kendo</button></td>
+    		<td><button class="buttonSch" onclick="myFunction()">Taekwondo</button></td>
+    		<td><button class="buttonSch" onclick="myFunction()">Jiu Jitsu</button></td>		
+    		<td><button class="buttonSch" onclick="myFunction()">Kendo</button></td>
+    		<td><button class="buttonSch" onclick="myFunction()">Taekwondo I</button></td>
+  		</tr>
+  		 <tr>
+  			<td>21:00-22:30</td>
+    		<td><button class="buttonSch" onclick="myFunction()">Kendo</button></td>
+    		<td><button class="buttonSch" onclick="myFunction()">Taekwondo I</button></td>
+    		<td><button class="buttonSch" onclick="myFunction()">Jiu Jitsu</button></td>		
+    		<td><button class="buttonSch" onclick="myFunction()">Jiu Jitsu</button></td>		
+    		<td><button class="buttonSch" onclick="myFunction()">Taekwondo</button></td>
+    		<td><button class="buttonSch" onclick="myFunction()">Kendo I</button></td>
+  		</tr>
+		</table>
+		<br>
+	<div> 
+		<h2 name='prices' id='prices'>Prices</h2>
+		<br>
+		<p>At the moment payment can only be done at the dojo. We apologize for the inconveniences.
+		</p>
+		<br>
+		<table>
+		<tr class='prices'>
+			<td>Trial class
+	    	<br>15
+	    	</td>
+
+	    	<td>4 classes
+	    	<br>50
+	    	</td>		
+
+	    	<td>8 classes
+	    	<br>85
+	    	</td>
+
+	    	<td>12 classes
+	    	<br>100</td>
+	    </tr>
+
+	    <tr class='prices'>
+	    	<td>1 month 
+	    	<br>unlim 
+	    	<br>Jiu Jitsu
+	    	<br>120</td>
+
+	    	<td>1 month 
+	    	<br>unlim 
+	    	<br>Taekwondo
+	    	<br>120</td>
+
+	    	<td>1 month 
+	    	<br>unlim 
+	    	<br>Kendo
+	    	<br>120</td>
+
+	    	<td>3 months 
+	    	<br>320</td>
+	    </tr>
+		</table>
+	</div>	
+	
+	</section>	
+
+</div>
+	<footer>
+		<div id="footerMenu">
+			<ul>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="bjj.html">Jiu Jitsu</a></li>
+				<li><a href="taekwondo.html">Taekwondo</a></li>
+				<li><a href="kendo.html">Kendo</a></li>
+				<li><a href="classes.html">Classes</a></li>
+			</ul>
+		</div>
+		<div id="copyright">
+			<p>copy Bestuur Martial Art</p>
+		</div>
+	</footer>
+
+</body>
+</html>
