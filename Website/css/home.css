@@ -5,11 +5,11 @@
 
 @font-face { 
     font-family: 'Capture It'; 
-    src: url('Capture it.ttf'); 
+    src: url('../other/Capture it.ttf'); 
 }
 @font-face{
 	font-family: 'Nixie One Regular';
-	src: url('NixieOne.ttf');
+	src: url('../other/NixieOne.ttf');
 }
 
 body {
