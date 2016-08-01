@@ -9,11 +9,11 @@
 }
 @font-face{
 	font-family: 'Nixie One Regular';
-	src: url('../other/NixieOne.ttf');
+	src: url('../other/NixieOne-Regular.ttf');
 }
 
 body {
-	background-image: url(img/background1.jpg);
+	background-image: url(../img/background1.jpg);
 	font-family: 'Nixie One Regular';
 	font-size: 1.2em;
 }
